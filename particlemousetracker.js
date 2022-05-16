@@ -13,9 +13,9 @@
 /***********************/
 
 /***** SETUP *****/
-// Simply insert this script and the appropriate
-// library files into the head of your HTML file
-// Then edit the CSS to make sure the styling works
+// Insert this script and the libraries included into your HTML
+// Set the body 'onload' event to 'initMouseTracker()'
+// Some extra CSS and JavaScript will likely be needed to make sure the overlay works
 /*****************/
 
 /***** COPYRIGHT *****/
