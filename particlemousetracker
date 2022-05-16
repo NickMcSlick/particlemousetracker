@@ -7,9 +7,16 @@
 /******************/
 
 /***** DESCRIPTION *****/
-// A fun look into simple 2D particle systems
-// These are all processed serially
+// This simple program inserts a particle trail
+// which will follow the mouse cursor. Some CSS
+// may have to be done to make sure it overlays properly
 /***********************/
+
+/***** SETUP *****/
+// Simply insert this script and the appropriate
+// library files into the head of your HTML file
+// Then edit the CSS to make sure the styling works
+/*****************/
 
 /***** COPYRIGHT *****/
 // Copyright 2022 Bryce Paubel
