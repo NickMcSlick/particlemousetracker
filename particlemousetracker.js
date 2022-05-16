@@ -96,7 +96,7 @@ function initMouseTracker() {
 	
 	console.log(canvas);
 
-	setwindowEvents(canvas);
+	setWindowEvents(canvas);
 
 	for (let i = 0; i < config.PARTICLES; i++) {		
 		particles.push(new Particle(
