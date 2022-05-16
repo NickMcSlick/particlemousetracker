@@ -1,5 +1,5 @@
 /***** TITLE *****/
-// Peculiar Particles
+// Particle Mouse Tracker
 /*****************/
 
 /***** AUTHOR *****/
