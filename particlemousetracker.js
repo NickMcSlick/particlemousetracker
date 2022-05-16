@@ -66,6 +66,7 @@ let config = {
 	MOUSE_MOVEMENT: [],
 	SELECTION: 0,
 	PARTICLES: 10,
+	SLUGGISH: true,
 }
 
 // Main program
@@ -179,7 +180,11 @@ function drawParticle(gl, particle) {
 function followCursor(canvas, particle) {
 	if (config.MOUSE) {
 		particle.velocity = [(2 * config.MOUSE[0] / canvas.width) - 1 - particle.position[0], (2 * config.MOUSE[1] / (-canvas.height)) + 1 - particle.position[1]];
-		particle.velocity = [particle.velocity[0] * 0.98 * (1 / (particle.scale + 1)), particle.velocity[1] * 0.98 * (1 / (particle.scale + 1))]
+		if (config.SLUGGISH) {
+			particle.velocity = [particle.velocity[0] * 0.98 * (1 / (particle.scale + 1)), particle.velocity[1] * 0.98 * (1 / (particle.scale + 1))];
+		} else {
+			particle.velocity = [particle.velocity[0] * 1 / Math.log(particle.scale + 5), particle.velocity[1] * 1 / Math.log(particle.scale + 5)];
+		}
 		particle.position = [particle.position[0] + particle.velocity[0], particle.position[1] + particle.velocity[1]];
 	}
 }
