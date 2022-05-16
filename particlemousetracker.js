@@ -69,7 +69,7 @@ let config = {
 }
 
 // Main program
-function main() {
+function initMouseTracker() {
 	// Animation ID
 	let animID = 1;
 	
